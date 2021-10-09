@@ -64,7 +64,7 @@ class HeaderContent extends Component {
             </Col>
             <Col lg={{ span: 3 }} xl={{ span: 3 }} md={{ span: 4 }} sm={{ span: 4 }} xs={{ span: 6 }}>
               {large ? (
-                <Dropdown overlay={overlay} trigger={["click"]}>
+                <Dropdown overlay={overlay} trigger={["click"]} placement="bottomRight" overlayStyle={{ width: "40%" }}>
                   <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
                     <UnorderedListOutlined style={{ fontSize: "18px" }} />
                   </a>
