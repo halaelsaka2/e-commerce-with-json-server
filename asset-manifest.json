@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/take-home-coding-challenge/static/css/main.6fbb3dd3.chunk.css",
-    "main.js": "/take-home-coding-challenge/static/js/main.db1272d2.chunk.js",
-    "main.js.map": "/take-home-coding-challenge/static/js/main.db1272d2.chunk.js.map",
-    "runtime-main.js": "/take-home-coding-challenge/static/js/runtime-main.0b99052b.js",
-    "runtime-main.js.map": "/take-home-coding-challenge/static/js/runtime-main.0b99052b.js.map",
-    "static/css/2.a95be28f.chunk.css": "/take-home-coding-challenge/static/css/2.a95be28f.chunk.css",
-    "static/js/2.1810b9ec.chunk.js": "/take-home-coding-challenge/static/js/2.1810b9ec.chunk.js",
-    "static/js/2.1810b9ec.chunk.js.map": "/take-home-coding-challenge/static/js/2.1810b9ec.chunk.js.map",
-    "index.html": "/take-home-coding-challenge/index.html",
-    "static/css/2.a95be28f.chunk.css.map": "/take-home-coding-challenge/static/css/2.a95be28f.chunk.css.map",
-    "static/css/main.6fbb3dd3.chunk.css.map": "/take-home-coding-challenge/static/css/main.6fbb3dd3.chunk.css.map",
-    "static/js/2.1810b9ec.chunk.js.LICENSE.txt": "/take-home-coding-challenge/static/js/2.1810b9ec.chunk.js.LICENSE.txt"
+    "main.css": "/e-commerce-with-json-server/static/css/main.6fbb3dd3.chunk.css",
+    "main.js": "/e-commerce-with-json-server/static/js/main.db1272d2.chunk.js",
+    "main.js.map": "/e-commerce-with-json-server/static/js/main.db1272d2.chunk.js.map",
+    "runtime-main.js": "/e-commerce-with-json-server/static/js/runtime-main.86fdde83.js",
+    "runtime-main.js.map": "/e-commerce-with-json-server/static/js/runtime-main.86fdde83.js.map",
+    "static/css/2.a95be28f.chunk.css": "/e-commerce-with-json-server/static/css/2.a95be28f.chunk.css",
+    "static/js/2.5d96fb5f.chunk.js": "/e-commerce-with-json-server/static/js/2.5d96fb5f.chunk.js",
+    "static/js/2.5d96fb5f.chunk.js.map": "/e-commerce-with-json-server/static/js/2.5d96fb5f.chunk.js.map",
+    "index.html": "/e-commerce-with-json-server/index.html",
+    "static/css/2.a95be28f.chunk.css.map": "/e-commerce-with-json-server/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.6fbb3dd3.chunk.css.map": "/e-commerce-with-json-server/static/css/main.6fbb3dd3.chunk.css.map",
+    "static/js/2.5d96fb5f.chunk.js.LICENSE.txt": "/e-commerce-with-json-server/static/js/2.5d96fb5f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0b99052b.js",
+    "static/js/runtime-main.86fdde83.js",
     "static/css/2.a95be28f.chunk.css",
-    "static/js/2.1810b9ec.chunk.js",
+    "static/js/2.5d96fb5f.chunk.js",
     "static/css/main.6fbb3dd3.chunk.css",
     "static/js/main.db1272d2.chunk.js"
   ]
