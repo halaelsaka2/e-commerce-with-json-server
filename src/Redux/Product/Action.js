@@ -72,3 +72,6 @@ export function savePageSize(size) {
 export function saveSortValue(value) {
   return { type: types.SAVE_SORT_VALUE, data: value };
 }
+export function removeProduct() {
+  return { type: types.REMOVE_PRODUCT, data: {} };
+}

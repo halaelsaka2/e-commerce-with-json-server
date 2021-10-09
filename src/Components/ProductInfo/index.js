@@ -2,7 +2,7 @@ import { Component } from "react";
 import { Row, Col, Card, Button, Select, Space, message } from "antd";
 import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
 import { connect } from "react-redux";
-
+import { removeProduct } from "../../Redux/Product/Action";
 class ProductInfo extends Component {
   constructor(props) {
     super(props);
@@ -17,6 +17,9 @@ class ProductInfo extends Component {
         currentImage: Object.keys(this.props.productById).length > 0 ? this.props.productById?.images[0] : "",
       });
     }
+  };
+  componentWillUnmount = () => {
+    this.props.removeProduct();
   };
 
   handleImageHandler = (img) => {
@@ -118,32 +121,6 @@ class ProductInfo extends Component {
                   ))}
               </Space>
             </Col>
-            {/* <Space style={{ width: "auto" }}>
-              <Card size="small">
-                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
-              </Card>
-              <Card size="small">
-                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
-              </Card>
-              <Card size="small">
-                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
-              </Card>
-            </Space> */}
-            {/* <Col xl={4} lg={4} md={4} sm={3} xs={6}>
-              <Card size="small">
-                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
-              </Card>
-            </Col>
-            <Col xl={4} lg={4} md={4} sm={3} xs={6}>
-              <Card size="small">
-                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
-              </Card>
-            </Col>
-            <Col xl={4} lg={4} md={4} sm={3} xs={6}>
-              <Card size="small">
-                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
-              </Card>
-            </Col> */}
           </Row>
           <Row>
             <span style={{ marginTop: "1rem", marginBottom: "10px", fontSize: "smaller" }}>Size:</span>
@@ -215,6 +192,6 @@ const mapStateToProps = (state, ownProps) => {
     productById: state.ProductReducer.productById,
   };
 };
-const mapDispatchToProps = {};
+const mapDispatchToProps = { removeProduct };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductInfo);

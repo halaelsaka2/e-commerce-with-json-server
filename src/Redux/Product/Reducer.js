@@ -47,6 +47,12 @@ export default function ProductReducer(state = initialState, action) {
         ...state,
         sortValue: action.data,
       };
+
+    case types.REMOVE_PRODUCT:
+      return {
+        ...state,
+        productById: action.data,
+      };
     default:
       return state;
   }

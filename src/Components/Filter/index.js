@@ -90,6 +90,7 @@ class Filter extends Component {
                   className="custom-selector"
                   style={{ width: medium || small || xSmall ? "60%" : "50%" }}
                   onChange={this.sortHandler}
+                  defaultValue="new"
                 >
                   <Select.Option key="new" value="new">
                     New
