@@ -24,9 +24,7 @@ class HeaderContent extends Component {
   render() {
     return (
       <Row justify="space-around">
-        <Col span={6}>
-          <img />
-        </Col>
+        <Col span={6}>{/* <img /> */}</Col>
         <Col span={8} push={3}>
           <Menu
             onClick={this.categoryHandler}

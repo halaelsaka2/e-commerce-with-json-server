@@ -16,7 +16,7 @@ class HomePage extends Component {
     this.state = { broken: false };
   }
   componentDidMount = () => {
-    if (this.props.allProductsWithFilter.length == 0) this.props.getAll();
+    if (this.props.allProductsWithFilter.length === 0) this.props.getAll();
   };
   render() {
     const customStyle = this.state.broken
@@ -26,6 +26,7 @@ class HomePage extends Component {
           top: 64,
         }
       : {};
+    const { medium, small, xSmall, large } = this.props;
     return (
       <>
         <Sider
@@ -53,8 +54,8 @@ class HomePage extends Component {
           <Size />
           <ColorFilter />
         </Sider>
-        <Content style={{ margin: "0px 0px 0px 30px" }}>
-          <Filter />
+        <Content style={{ margin: large ? "0px 0px 0px 10px" : "0px 0px 0px 30px" }}>
+          <Filter medium={medium} small={small} xSmall={xSmall} />
           <Products />
         </Content>
       </>

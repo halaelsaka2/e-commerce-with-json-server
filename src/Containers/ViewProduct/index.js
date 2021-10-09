@@ -7,7 +7,8 @@ class ViewProduct extends Component {
     this.props.getProductById(this.props.match.params.id);
   };
   render() {
-    return <ProductInfo />;
+    const { medium, small, xSmall, large } = this.props;
+    return <ProductInfo medium={medium} large={large} small={small} xSmall={xSmall} />;
   }
 }
 

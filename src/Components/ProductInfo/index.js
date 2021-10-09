@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { Row, Col, Card, Button, Select, Space, message } from "antd";
 import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
-import ImageGallery from "react-image-gallery";
 import { connect } from "react-redux";
 
 class ProductInfo extends Component {
@@ -36,9 +35,11 @@ class ProductInfo extends Component {
   };
   render() {
     const { count } = this.state;
+    const { medium, small, xSmall } = this.props;
+
     return (
       <Row gutter={[16, 16]}>
-        <Col span={12}>
+        <Col lg={{ span: 12 }} xl={{ span: 12 }} md={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
           <Row gutter={24}>
             <Col span={4}>
               {Object.keys(this.props.productById).length > 0 &&
@@ -64,7 +65,7 @@ class ProductInfo extends Component {
             </Col>
           </Row>
         </Col>
-        <Col span={12}>
+        <Col lg={{ span: 12 }} xl={{ span: 12 }} md={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
           {this.props.productById?.discount ? (
             <Row>
               <Button
@@ -78,64 +79,83 @@ class ProductInfo extends Component {
           ) : (
             ""
           )}
-          <Row>
+          <Row justify={small || xSmall || medium ? "center" : ""}>
             <h2 style={{ fontWeight: 300 }}>{this.props.productById.name}</h2>
           </Row>
           {this.props.productById?.discount ? (
-            <Row gutter={12}>
-              <Col span={4}>
+            <Row gutter={{ lg: 12, md: 12, sm: 24, xm: 24 }} justify={small || xSmall || medium ? "center" : ""}>
+              <Col lg={4} md={4} sm={6} xs={6}>
                 <h3 style={{ fontWeight: 400, color: "red" }}>
                   $
                   {this.props.productById?.price -
                     (this.props.productById?.discount / 100) * this.props.productById?.price}
                 </h3>
               </Col>
-              <Col span={4}>
+              <Col lg={4} md={4} sm={6} xs={6}>
                 <h3 style={{ fontWeight: 300, textDecoration: "line-through", color: "gray" }}>
                   ${this.props.productById?.price}
                 </h3>
               </Col>
             </Row>
           ) : (
-            <Row gutter={12}>
+            <Row gutter={12} justify={small || xSmall || medium ? "center" : ""}>
               <Col span={4}>
                 <h3 style={{ fontWeight: 500 }}>${this.props.productById?.price}</h3>
               </Col>
             </Row>
           )}
-          <Row>
-            <span style={{ marginTop: "2rem", marginBottom: "10px", fontSize: "smaller" }}>Colors:</span>
+          <Row justify={small || xSmall || medium ? "center" : ""}>
+            <span style={{ marginTop: "1rem", marginBottom: "10px", fontSize: "smaller" }}>Colors:</span>
           </Row>
-          <Row gutter={8}>
-            {Object.keys(this.props.productById).length > 0 &&
-              this.props.productById?.colors.map((color) => (
-                <Col span={2} key={color}>
-                  <div
-                    style={{
-                      border: "1px solid lightgray",
-                      padding: 1,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      width: "30px",
-                      height: "25px",
-                    }}
-                  >
-                    <div style={{ backgroundColor: color, width: "80%", height: "15px" }}></div>
-                  </div>
-                </Col>
-              ))}
+          <Row gutter={24} justify={small || xSmall || medium ? "center" : ""}>
+            <Col xl={4} lg={4} md={4} sm={3} xs={6}>
+              <Space>
+                {Object.keys(this.props.productById).length > 0 &&
+                  this.props.productById?.colors.map((color) => (
+                    <Card key={color} size="small">
+                      <Card size="small" type="inner" style={{ backgroundColor: color }}></Card>
+                    </Card>
+                  ))}
+              </Space>
+            </Col>
+            {/* <Space style={{ width: "auto" }}>
+              <Card size="small">
+                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
+              </Card>
+              <Card size="small">
+                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
+              </Card>
+              <Card size="small">
+                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
+              </Card>
+            </Space> */}
+            {/* <Col xl={4} lg={4} md={4} sm={3} xs={6}>
+              <Card size="small">
+                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
+              </Card>
+            </Col>
+            <Col xl={4} lg={4} md={4} sm={3} xs={6}>
+              <Card size="small">
+                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
+              </Card>
+            </Col>
+            <Col xl={4} lg={4} md={4} sm={3} xs={6}>
+              <Card size="small">
+                <Card size="small" type="inner" style={{ backgroundColor: "black" }}></Card>
+              </Card>
+            </Col> */}
           </Row>
-          <Row>
-            <span style={{ marginTop: "2rem", marginBottom: "10px", fontSize: "smaller" }}>Size:</span>
+          <Row justify={small || xSmall || medium ? "center" : ""}>
+            <span style={{ marginTop: "1rem", marginBottom: "10px", fontSize: "smaller" }}>Size:</span>
           </Row>
-          <Row gutter={8}>
+          <Row gutter={8} justify={small || xSmall || medium ? "center" : ""}>
             <Col span={7}>
               <Select
                 className="custom-selector"
                 placeholder="Choose Size"
-                style={{ width: "100%" }}
+                style={{ width: small || xSmall ? "" : "100%" }}
                 dropdownStyle={{ borderRadius: "20px" }}
+                size={small || xSmall ? "small" : "middle"}
               >
                 {Object.keys(this.props.productById).length > 0 &&
                   this.props.productById?.sizes.map((size) => (
@@ -147,26 +167,38 @@ class ProductInfo extends Component {
             </Col>
           </Row>
 
-          <Row>
-            <span style={{ marginTop: "2rem", marginBottom: "10px", fontSize: "smaller" }}>Quantity:</span>
+          <Row justify={small || xSmall || medium ? "center" : ""}>
+            <span style={{ marginTop: "1rem", marginBottom: "10px", fontSize: "smaller" }}>Quantity:</span>
           </Row>
-          <Row gutter={12}>
-            <Space style={{ border: "1px solid lightgray", borderRadius: "50px", padding: "5px 18px" }}>
-              <MinusOutlined style={{ color: count === 1 ? "lightgray" : "black" }} onClick={this.minusHandler} />
-              {count}
-              <PlusOutlined onClick={this.plusHandler} />
-            </Space>
-            <Col span={7}>
+          <Row gutter={{ lg: 12, xl: 12, sm: 24, xs: 24 }} justify={small || xSmall || medium ? "center" : ""}>
+            <Col xl={6} lg={6} md={8} sm={6} xs={10}>
+              <Space
+                style={{
+                  border: "1px solid lightgray",
+                  borderRadius: "50px",
+                  padding: small || xSmall ? "1px 15px" : "5px 18px",
+                }}
+              >
+                <MinusOutlined
+                  style={{ color: count === 1 ? "lightgray" : "black" }}
+                  onClick={this.minusHandler}
+                />
+                {count}
+                <PlusOutlined onClick={this.plusHandler} />
+              </Space>
+            </Col>
+            <Col xl={6} lg={6} md={8} sm={6} xs={10}>
               <Button
                 type="primary"
                 style={{
                   color: "black",
-                  fontWeight: 600,
+                  fontWeight: small || xSmall ? 400 : 600,
                   border: "none",
                   borderRadius: "50px",
                   backgroundColor: "#FBB03B",
-                  padding: "4px 25px",
+                  padding: small || xSmall ? "2px 22px" : "4px 25px",
                 }}
+                size={small || xSmall ? "small" : "middle"}
               >
                 ADD TO CART
               </Button>

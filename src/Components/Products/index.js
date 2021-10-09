@@ -66,13 +66,12 @@ class Products extends Component {
           )}
         </Row>
         <Row gutter={24}>
-          <Col span={24} align="right">
+          <Col span={24} align="right" style={{ marginTop: "2rem" }}>
             <Pagination
               total={this.props.productsCount}
               responsive={true}
               hideOnSinglePage={true}
               onChange={this.paginateHandler}
-              // showTotal={(total, range) => `${total} Products`}
             />
           </Col>
         </Row>
