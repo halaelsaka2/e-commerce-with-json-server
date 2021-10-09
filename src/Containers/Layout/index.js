@@ -3,7 +3,7 @@ import { Layout } from "antd";
 import HeaderContent from "../../Components/HeaderContent";
 import BreadCrumb from "../../Components/BreadCrumb";
 import HomePage from "../Home";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route,Redirect } from "react-router-dom";
 import ViewProduct from "../ViewProduct";
 import { Component } from "react";
 import { getAll } from "../../Redux/Category/Action";
@@ -37,7 +37,9 @@ class LayoutComponent extends Component {
               <Switch>
                 <Route path="/home" component={HomePage} />
                 <Route path="/viewProduct/:id" component={ViewProduct} />
-                <Route path="/" exact component={HomePage} />
+                <Route exact path="/">
+                  <Redirect to="/home" />
+                </Route>
               </Switch>
             </Layout>
           </Content>
