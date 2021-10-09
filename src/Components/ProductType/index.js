@@ -17,7 +17,6 @@ class ProductType extends Component {
   }
 
   onChange = (list) => {
-    console.log(list);
     this.setState({ checkedList: list });
     this.props.saveProductType(list);
     this.props.getProductsByfilters(

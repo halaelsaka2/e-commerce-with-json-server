@@ -35,7 +35,6 @@ const getProductsByfilters = async (category, color, priceRange, size, types, cu
   if (category) {
     Url = Url + `categoryId=${category}&`;
   }
-  console.log(Url);
   return await axiosInstance.get(Url, { maxContentLength: 1000000 });
 };
 const exportedObject = { getAll, getProductById, getProductsByfilters };

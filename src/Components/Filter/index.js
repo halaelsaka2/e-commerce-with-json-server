@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { savePageSize, saveSortValue, getProductsByfilters } from "../../Redux/Product/Action";
 class Filter extends Component {
   pageSizeHandler = (value) => {
-    console.log(value);
     this.props.savePageSize(value);
     this.props.getProductsByfilters(
       this.props.currentCategory,
@@ -60,8 +59,9 @@ class Filter extends Component {
                 <Select
                   className="custom-selector"
                   size={small || xSmall ? "small" : "middle"}
-                  style={{ width: medium || small || xSmall ? "40%" : "25%" }}
+                  style={{ width: xSmall ? "48%" : medium || small ? "40%" : "25%" }}
                   onChange={this.pageSizeHandler}
+                  defaultValue={10}
                 >
                   <Select.Option key={10} value={10}>
                     10
@@ -88,7 +88,7 @@ class Filter extends Component {
                 <Select
                   size={small || xSmall ? "small" : "middle"}
                   className="custom-selector"
-                  style={{ width: medium || small || xSmall ? "60%" : "50%" }}
+                  style={{ width: xSmall ? "68%" : medium || small ? "60%" : "50%" }}
                   onChange={this.sortHandler}
                   defaultValue="new"
                 >

@@ -47,7 +47,7 @@ class LayoutComponent extends Component {
               borderColor: "lightgray",
             }}
           >
-            <HeaderContent />
+            <HeaderContent medium={medium} large={large} small={small} xSmall={xSmall} />
           </Header>
 
           <Content style={{ margin: "30px 40px 0" }}>

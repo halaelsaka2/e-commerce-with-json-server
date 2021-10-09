@@ -16,7 +16,6 @@ export default function ProductReducer(state = initialState, action) {
       };
 
     case types.FILTER_PRODUCTS:
-      console.log(action.data);
       return {
         ...state,
         allProductsWithFilter: action.data.products,

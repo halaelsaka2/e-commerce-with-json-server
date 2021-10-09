@@ -14,7 +14,6 @@ export default function CategoryReducer(state = initialState, action) {
         currentCategory: action.data,
       };
     case types.GET_CATEGORY_BY_ID:
-      console.log(action.data);
       return {
         ...state,
         categoryById: action.data,

@@ -10,7 +10,6 @@ class Products extends Component {
     this.props.history.push(`/viewProduct/${id}`);
   };
   paginateHandler = (page) => {
-    console.log(page);
     this.props.getProductsByfilters(
       this.props.currentCategory,
       this.props.currentColor,

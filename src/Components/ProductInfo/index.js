@@ -23,7 +23,6 @@ class ProductInfo extends Component {
   };
 
   handleImageHandler = (img) => {
-    console.log(img);
     this.setState({ currentImage: img });
   };
   plusHandler = () => {
