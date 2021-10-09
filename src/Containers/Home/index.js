@@ -11,10 +11,21 @@ import { getAll } from "../../Redux/Product/Action";
 const { Content, Sider } = Layout;
 
 class HomePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { broken: false };
+  }
   componentDidMount = () => {
     if (this.props.allProductsWithFilter.length == 0) this.props.getAll();
   };
   render() {
+    const customStyle = this.state.broken
+      ? {
+          position: "absolute",
+          left: 0,
+          top: 64,
+        }
+      : {};
     return (
       <>
         <Sider
@@ -22,12 +33,20 @@ class HomePage extends Component {
           collapsedWidth="0"
           onBreakpoint={(broken) => {
             console.log(broken);
+            this.setState({ broken });
           }}
           onCollapse={(collapsed, type) => {
             console.log(collapsed, type);
           }}
-          style={{ backgroundColor: "transparent" }}
+          zeroWidthTriggerStyle={{
+            color: "black",
+            backgroundColor: "white",
+            border: "1px solid black",
+            right: "-35px",
+          }}
+          style={{ zIndex: 10, ...customStyle, backgroundColor: "white" }}
           width={240}
+          theme="light"
         >
           <ProductType />
           <Price />

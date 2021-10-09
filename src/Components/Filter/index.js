@@ -5,8 +5,8 @@ import { connect } from "react-redux";
 class Filter extends Component {
   render() {
     return (
-      <Row style={{ marginBottom: "2rem" }} justify="space-between">
-        <Col span={4}>
+      <Row gutter={[16, 16]} style={{ marginBottom: "2rem" }} justify="space-between">
+        <Col span={4} lg={{ span: 8 }} xl={{ span: 8 }} md={{ span: 12 }} sm={{ span: 24 }}>
           {Object.keys(this.props.categoryById).length > 0
             ? `${this.props.categoryById?.name}'s Tops (${this.props.productsCount})`
             : `All Products (${this.props.productsCount})`}
