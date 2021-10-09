@@ -1,0 +1,390 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "name": "Men"
+    },
+    {
+      "id": 2,
+      "name": "Women"
+    },
+    {
+      "id": 3,
+      "name": "Kids"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "yellow",
+        "black"
+      ],
+      "price": 214,
+      "discount": 0,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "M"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2,
+      "type": "T-shirts"
+    },
+    {
+      "id": 2,
+      "name": "Tunic Mustard",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1612508094/N44171094V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1612508094/N44171094V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1612508094/N44171094V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "yellow"
+      ],
+      "price": 614,
+      "discount": 30,
+      "currency": "USD",
+      "sizes": [
+        "S",
+        "XXL"
+      ],
+      "status": "popular",
+      "quantity": 30,
+      "categoryId": 2,
+      "type": "Sweatshirts"
+    },
+    {
+      "id": 3,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2,
+      "type": "Tank Tops"
+    },
+    {
+      "id": 4,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2,
+      "type": "Dress shirts"
+    },
+    {
+      "id": 5,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    },
+    {
+      "id": 6,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    },
+    {
+      "id": 7,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    },
+    {
+      "id": 8,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    },
+    {
+      "id": 9,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    },
+    {
+      "id": 10,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    },
+    {
+      "id": 11,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    },
+    {
+      "id": 12,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    },
+    {
+      "id": 13,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    },
+    {
+      "id": 14,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    },
+    {
+      "id": 15,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    },
+    {
+      "id": 16,
+      "name": "T-shirt-Summer",
+      "images": [
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+      ],
+      "colors": [
+        "black",
+        "white"
+      ],
+      "price": 214,
+      "discount": 20,
+      "currency": "USD",
+      "sizes": [
+        "XS",
+        "L"
+      ],
+      "status": "popular",
+      "quantity": 4,
+      "categoryId": 2
+    }
+  ]
+}
