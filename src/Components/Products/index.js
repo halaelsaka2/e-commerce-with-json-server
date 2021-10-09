@@ -17,7 +17,9 @@ class Products extends Component {
       this.props.currentPriceRange,
       this.props.currentSize,
       this.props.currentType,
-      page
+      page,
+      this.props.pageSize,
+      this.props.sortValue
     );
   };
   render() {
@@ -72,6 +74,7 @@ class Products extends Component {
               responsive={true}
               hideOnSinglePage={true}
               onChange={this.paginateHandler}
+              pageSize={this.props.pageSize}
             />
           </Col>
         </Row>
@@ -90,6 +93,8 @@ const mapStateToProps = (state, ownProps) => {
     currentSize: state.ProductReducer.currentSize,
     currentPriceRange: state.ProductReducer.currentPriceRange,
     currentType: state.ProductReducer.currentType,
+    pageSize: state.ProductReducer.pageSize,
+    sortValue: state.ProductReducer.sortValue,
   };
 };
 const mapDispatchToProps = { saveCurrentPage, getProductsByfilters };

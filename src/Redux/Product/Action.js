@@ -14,7 +14,6 @@ function getProductsByfiltersSuccess(data) {
 export function getAll() {
   return async function (dispatch) {
     const productData = await ProductService.getAll();
-    console.log(productData);
     dispatch(getAllSuccess({ products: productData.data, count: productData.headers["x-total-count"] }));
   };
 }
@@ -26,7 +25,7 @@ export function getProductById(id) {
   };
 }
 
-export function getProductsByfilters(category, colors, priceRange, size, types, page) {
+export function getProductsByfilters(category, colors, priceRange, size, types, page, limit, sort) {
   return async function (dispatch) {
     const allProductWithFilter = await ProductService.getProductsByfilters(
       category,
@@ -34,7 +33,9 @@ export function getProductsByfilters(category, colors, priceRange, size, types, 
       priceRange,
       size,
       types,
-      page
+      page,
+      limit,
+      sort
     );
 
     dispatch(
@@ -54,13 +55,20 @@ export function saveColor(colors) {
   return { type: types.SAVE_COLORS, data: colors };
 }
 
-export function saveCurrentPage(id) {
-  return { type: types.SAVE_CURRENT_PAGE, data: id };
+export function saveCurrentPage(page) {
+  return { type: types.SAVE_CURRENT_PAGE, data: page };
 }
 
-export function saveSize(id) {
-  return { type: types.SAVE_SIZE, data: id };
+export function saveSize(size) {
+  return { type: types.SAVE_SIZE, data: size };
 }
-export function saveProductType(id) {
-  return { type: types.SAVE_PRODUCT_TYPE, data: id };
+export function saveProductType(type) {
+  return { type: types.SAVE_PRODUCT_TYPE, data: type };
+}
+export function savePageSize(size) {
+  return { type: types.SAVE_PAGE_SIZE, data: size };
+}
+
+export function saveSortValue(value) {
+  return { type: types.SAVE_SORT_VALUE, data: value };
 }

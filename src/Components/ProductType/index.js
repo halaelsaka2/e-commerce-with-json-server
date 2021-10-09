@@ -26,7 +26,9 @@ class ProductType extends Component {
       this.props.currentPriceRange,
       this.props.currentSize,
       list,
-      this.props.currentPage
+      this.props.currentPage,
+      this.props.pageSize,
+      this.props.sortValue
     );
   };
 
@@ -45,7 +47,9 @@ class ProductType extends Component {
         this.props.currentPriceRange,
         this.props.currentSize,
         [],
-        this.props.currentPage
+        this.props.currentPage,
+        this.props.pageSize,
+        this.props.sortValue
       );
     }
   };
@@ -106,6 +110,8 @@ const mapStateToProps = (state, ownProps) => {
     currentColor: state.ProductReducer.currentColor,
     currentSize: state.ProductReducer.currentSize,
     currentPriceRange: state.ProductReducer.currentPriceRange,
+    pageSize: state.ProductReducer.pageSize,
+    sortValue: state.ProductReducer.sortValue,
   };
 };
 const mapDispatchToProps = { getProductsByfilters, saveProductType };

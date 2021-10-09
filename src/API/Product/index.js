@@ -8,10 +8,16 @@ const getProductById = (id) => {
   return axiosInstance.get(`${url}/${id}`, { maxContentLength: 1000000 });
 };
 
-const getProductsByfilters = async (category, color, priceRange, size, types, currentPage) => {
+const getProductsByfilters = async (category, color, priceRange, size, types, currentPage, limit, sort) => {
   let Url = `${url}?_page=${currentPage}&`;
   if (color) {
     Url = Url + `colors_like=${color}&`;
+  }
+  if (limit) {
+    Url = Url + `_limit=${limit}&`;
+  }
+  if (sort) {
+    Url = sort === "new" ? Url + `_sort=status&_order=asc&` : Url + `_sort=status&_order=desc&`;
   }
   if (size) {
     Url = Url + `sizes_like=${size}&`;

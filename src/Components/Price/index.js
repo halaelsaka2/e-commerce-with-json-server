@@ -30,7 +30,9 @@ class Price extends Component {
       values,
       this.props.currentSize,
       this.props.currentType,
-      this.props.currentPage
+      this.props.currentPage,
+      this.props.pageSize,
+      this.props.sortValue
     );
   };
   clearRangeHandler = (e) => {
@@ -42,8 +44,10 @@ class Price extends Component {
         this.props.currentColor,
         [],
         this.props.currentSize,
-      this.props.currentType,
-      this.props.currentPage
+        this.props.currentType,
+        this.props.currentPage,
+        this.props.pageSize,
+        this.props.sortValue
       );
     }
   };
@@ -106,6 +110,8 @@ const mapStateToProps = (state, ownProps) => {
     currentColor: state.ProductReducer.currentColor,
     currentSize: state.ProductReducer.currentSize,
     currentType: state.ProductReducer.currentType,
+    pageSize: state.ProductReducer.pageSize,
+    sortValue: state.ProductReducer.sortValue,
   };
 };
 const mapDispatchToProps = { getProductsByfilters, savePriceRange };

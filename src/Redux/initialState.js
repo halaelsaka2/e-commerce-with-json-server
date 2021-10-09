@@ -11,6 +11,8 @@ const obj = {
   currentCategory: null,
   currentSize: null,
   currentType: [],
+  pageSize: 10,
+  sortValue: null,
 };
 
 export default obj;

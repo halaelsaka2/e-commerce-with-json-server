@@ -35,7 +35,7 @@ class ProductInfo extends Component {
   };
   render() {
     const { count } = this.state;
-    const { medium, small, xSmall } = this.props;
+    const { small, xSmall } = this.props;
 
     return (
       <Row gutter={[16, 16]}>
@@ -79,11 +79,11 @@ class ProductInfo extends Component {
           ) : (
             ""
           )}
-          <Row justify={small || xSmall || medium ? "center" : ""}>
+          <Row>
             <h2 style={{ fontWeight: 300 }}>{this.props.productById.name}</h2>
           </Row>
           {this.props.productById?.discount ? (
-            <Row gutter={{ lg: 12, md: 12, sm: 24, xm: 24 }} justify={small || xSmall || medium ? "center" : ""}>
+            <Row gutter={{ lg: 12, md: 12, sm: 24, xm: 24 }}>
               <Col lg={4} md={4} sm={6} xs={6}>
                 <h3 style={{ fontWeight: 400, color: "red" }}>
                   $
@@ -98,16 +98,16 @@ class ProductInfo extends Component {
               </Col>
             </Row>
           ) : (
-            <Row gutter={12} justify={small || xSmall || medium ? "center" : ""}>
+            <Row gutter={12}>
               <Col span={4}>
                 <h3 style={{ fontWeight: 500 }}>${this.props.productById?.price}</h3>
               </Col>
             </Row>
           )}
-          <Row justify={small || xSmall || medium ? "center" : ""}>
+          <Row>
             <span style={{ marginTop: "1rem", marginBottom: "10px", fontSize: "smaller" }}>Colors:</span>
           </Row>
-          <Row gutter={24} justify={small || xSmall || medium ? "center" : ""}>
+          <Row gutter={24}>
             <Col xl={4} lg={4} md={4} sm={3} xs={6}>
               <Space>
                 {Object.keys(this.props.productById).length > 0 &&
@@ -145,10 +145,10 @@ class ProductInfo extends Component {
               </Card>
             </Col> */}
           </Row>
-          <Row justify={small || xSmall || medium ? "center" : ""}>
+          <Row>
             <span style={{ marginTop: "1rem", marginBottom: "10px", fontSize: "smaller" }}>Size:</span>
           </Row>
-          <Row gutter={8} justify={small || xSmall || medium ? "center" : ""}>
+          <Row gutter={8}>
             <Col span={7}>
               <Select
                 className="custom-selector"
@@ -167,11 +167,11 @@ class ProductInfo extends Component {
             </Col>
           </Row>
 
-          <Row justify={small || xSmall || medium ? "center" : ""}>
+          <Row>
             <span style={{ marginTop: "1rem", marginBottom: "10px", fontSize: "smaller" }}>Quantity:</span>
           </Row>
-          <Row gutter={{ lg: 12, xl: 12, sm: 24, xs: 24 }} justify={small || xSmall || medium ? "center" : ""}>
-            <Col xl={6} lg={6} md={8} sm={6} xs={10}>
+          <Row gutter={{ lg: 12, xl: 12, sm: 24, xs: 24 }}>
+            <Col xl={6} lg={6} md={8} sm={6} xs={xSmall ? 10 : small ? 6 : ""}>
               <Space
                 style={{
                   border: "1px solid lightgray",
@@ -187,7 +187,7 @@ class ProductInfo extends Component {
                 <PlusOutlined onClick={this.plusHandler} />
               </Space>
             </Col>
-            <Col xl={6} lg={6} md={8} sm={6} xs={10}>
+            <Col xl={6} lg={6} md={8} sm={6} xs={xSmall ? 10 : small ? 6 : ""}>
               <Button
                 type="primary"
                 style={{

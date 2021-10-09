@@ -1,8 +1,35 @@
 import { Component } from "react";
 import { Col, Row, Select } from "antd";
 import { connect } from "react-redux";
-
+import { savePageSize, saveSortValue, getProductsByfilters } from "../../Redux/Product/Action";
 class Filter extends Component {
+  pageSizeHandler = (value) => {
+    console.log(value);
+    this.props.savePageSize(value);
+    this.props.getProductsByfilters(
+      this.props.currentCategory,
+      this.props.currentColor,
+      this.props.currentPriceRange,
+      this.props.currentSize,
+      this.props.currentType,
+      this.props.currentPage,
+      value,
+      this.props.sortValue
+    );
+  };
+  sortHandler = (value) => {
+    this.props.saveSortValue(value);
+    this.props.getProductsByfilters(
+      this.props.currentCategory,
+      this.props.currentColor,
+      this.props.currentPriceRange,
+      this.props.currentSize,
+      this.props.currentType,
+      this.props.currentPage,
+      this.props.pageSize,
+      value
+    );
+  };
   render() {
     const { medium, small, xSmall } = this.props;
     return (
@@ -28,16 +55,23 @@ class Filter extends Component {
                     fontSize: small || xSmall ? "smaller" : "",
                   }}
                 >
-                  Show Products:
+                  Show:
                 </div>
                 <Select
                   className="custom-selector"
                   size={small || xSmall ? "small" : "middle"}
                   style={{ width: medium || small || xSmall ? "40%" : "25%" }}
+                  onChange={this.pageSizeHandler}
                 >
-                  <Select.Option>10</Select.Option>
-                  <Select.Option>20</Select.Option>
-                  <Select.Option>30</Select.Option>
+                  <Select.Option key={10} value={10}>
+                    10
+                  </Select.Option>
+                  <Select.Option key={20} value={20}>
+                    20
+                  </Select.Option>
+                  <Select.Option key={30} value={30}>
+                    30
+                  </Select.Option>
                 </Select>
               </div>
             </Col>
@@ -55,6 +89,7 @@ class Filter extends Component {
                   size={small || xSmall ? "small" : "middle"}
                   className="custom-selector"
                   style={{ width: medium || small || xSmall ? "60%" : "50%" }}
+                  onChange={this.sortHandler}
                 >
                   <Select.Option key="new" value="new">
                     New
@@ -75,8 +110,16 @@ const mapStateToProps = (state, ownProps) => {
   return {
     productsCount: state.ProductReducer.productsCount,
     categoryById: state.CategoryReducer.categoryById,
+
+    currentCategory: state.CategoryReducer.currentCategory,
+    currentPage: state.ProductReducer.currentPage,
+    currentPriceRange: state.ProductReducer.currentPriceRange,
+    currentSize: state.ProductReducer.currentSize,
+    currentType: state.ProductReducer.currentType,
+    currentColor: state.ProductReducer.currentColor,
+    sortValue: state.ProductReducer.sortValue,
   };
 };
-const mapDispatchToProps = {};
+const mapDispatchToProps = { savePageSize, getProductsByfilters, saveSortValue };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Filter);

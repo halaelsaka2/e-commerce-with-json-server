@@ -16,6 +16,7 @@ export default function ProductReducer(state = initialState, action) {
       };
 
     case types.FILTER_PRODUCTS:
+      console.log(action.data);
       return {
         ...state,
         allProductsWithFilter: action.data.products,
@@ -35,6 +36,16 @@ export default function ProductReducer(state = initialState, action) {
       return {
         ...state,
         currentPriceRange: action.data,
+      };
+    case types.SAVE_PAGE_SIZE:
+      return {
+        ...state,
+        pageSize: action.data,
+      };
+    case types.SAVE_SORT_VALUE:
+      return {
+        ...state,
+        sortValue: action.data,
       };
     default:
       return state;

@@ -9,3 +9,5 @@ export const SAVE_CURRENT_PAGE = "SAVE_CURRENT_PAGE";
 export const SAVE_SIZE = "SAVE_SIZE";
 export const GET_CATEGORY_BY_ID = "GET_CATEGORY_BY_ID";
 export const SAVE_PRODUCT_TYPE = "SAVE_PRODUCT_TYPE";
+export const SAVE_PAGE_SIZE = "SAVE_PAGE_SIZE";
+export const SAVE_SORT_VALUE = "SAVE_SORT_VALUE";

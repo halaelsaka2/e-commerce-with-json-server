@@ -15,7 +15,9 @@ class HeaderContent extends Component {
       this.props.currentPriceRange,
       this.props.currentSize,
       this.props.currentType,
-      this.props.currentPage
+      this.props.currentPage,
+      this.props.pageSize,
+      this.props.sortValue
     );
     if (this.props.location.pathname !== "/home") {
       this.props.history.push("/home");
@@ -61,6 +63,8 @@ const mapStateToProps = (state, ownProps) => {
     currentPriceRange: state.ProductReducer.currentPriceRange,
     currentSize: state.ProductReducer.currentSize,
     currentType: state.ProductReducer.currentType,
+    pageSize: state.ProductReducer.pageSize,
+    sortValue: state.ProductReducer.sortValue,
   };
 };
 const mapDispatchToProps = { saveCategoryId, getProductsByfilters, getProductById, getCategoryById };

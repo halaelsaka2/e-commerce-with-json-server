@@ -27,7 +27,9 @@ class ColorFilter extends Component {
         this.props.currentPriceRange,
         this.props.currentSize,
         this.props.currentType,
-        this.props.currentPage
+        this.props.currentPage,
+        this.props.pageSize,
+        this.props.sortValue
       );
     }
   };
@@ -40,7 +42,9 @@ class ColorFilter extends Component {
       this.props.currentPriceRange,
       this.props.currentSize,
       this.props.currentType,
-      this.props.currentPage
+      this.props.currentPage,
+      this.props.pageSize,
+      this.props.sortValue
     );
     this.setState({ color: value });
   };
@@ -192,6 +196,8 @@ const mapStateToProps = (state, ownProps) => {
     currentPriceRange: state.ProductReducer.currentPriceRange,
     currentSize: state.ProductReducer.currentSize,
     currentType: state.ProductReducer.currentType,
+    pageSize: state.ProductReducer.pageSize,
+    sortValue: state.ProductReducer.sortValue,
   };
 };
 const mapDispatchToProps = { getProductsByfilters, saveColor };
