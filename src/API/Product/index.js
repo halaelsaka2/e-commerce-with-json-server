@@ -1,11 +1,11 @@
 import axios from "axios";
 
 const getAll = () => {
-  return axios.get(`http://localhost:3000/products?_page=${1}`);
+  return axios.get(`http://localhost:3000/products?_page=${1}`, { maxContentLength: 1000000 });
 };
 
 const getProductById = (id) => {
-  return axios.get(`http://localhost:3000/products/${id}`);
+  return axios.get(`http://localhost:3000/products/${id}`, { maxContentLength: 1000000 });
 };
 
 const getProductsByfilters = async (category, color, priceRange, size, types, currentPage) => {
@@ -30,7 +30,7 @@ const getProductsByfilters = async (category, color, priceRange, size, types, cu
     Url = Url + `categoryId=${category}&`;
   }
   console.log(Url);
-  return await axios.get(Url);
+  return await axios.get(Url, { maxContentLength: 1000000 });
 };
 const exportedObject = { getAll, getProductById, getProductsByfilters };
 

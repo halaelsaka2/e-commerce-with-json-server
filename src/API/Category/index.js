@@ -5,7 +5,7 @@ const getAll = () => {
   return axios.get(`${url}`);
 };
 const getCategoryById = (id) => {
-  return axios.get(`${url}/${id}`);
+  return axios.get(`${url}/${id}`, { maxContentLength: 1000000 });
 };
 const exportedObject = { getAll, getCategoryById };
 
