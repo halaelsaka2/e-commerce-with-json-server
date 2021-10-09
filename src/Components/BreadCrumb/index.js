@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 const BreadCrumb = (props) => {
   return (
     <Breadcrumb style={{ marginBottom: "2rem" }}>
-      <Breadcrumb.Item href="/home">
+      <Breadcrumb.Item href="./home">
         <HomeOutlined />
       </Breadcrumb.Item>
       <Breadcrumb.Item style={{ color: "gray" }}>All Products</Breadcrumb.Item>

@@ -1,11 +1,10 @@
-import axios from "axios";
-let url = " http://localhost:3000/category";
-
+import axiosInstance from "../axiosInstance";
+let url = "/category";
 const getAll = () => {
-  return axios.get(`${url}`);
+  return axiosInstance.get(`${url}`);
 };
 const getCategoryById = (id) => {
-  return axios.get(`${url}/${id}`, { maxContentLength: 1000000 });
+  return axiosInstance.get(`${url}/${id}`, { maxContentLength: 1000000 });
 };
 const exportedObject = { getAll, getCategoryById };
 

@@ -1,15 +1,15 @@
-import axios from "axios";
-
+import axiosInstance from "../axiosInstance";
+let url = "/products";
 const getAll = () => {
-  return axios.get(`http://localhost:3000/products?_page=${1}`, { maxContentLength: 1000000 });
+  return axiosInstance.get(`${url}?_page=${1}`, { maxContentLength: 1000000 });
 };
 
 const getProductById = (id) => {
-  return axios.get(`http://localhost:3000/products/${id}`, { maxContentLength: 1000000 });
+  return axiosInstance.get(`${url}/${id}`, { maxContentLength: 1000000 });
 };
 
 const getProductsByfilters = async (category, color, priceRange, size, types, currentPage) => {
-  let Url = `http://localhost:3000/products?_page=${currentPage}&`;
+  let Url = `${url}?_page=${currentPage}&`;
   if (color) {
     Url = Url + `colors_like=${color}&`;
   }
@@ -30,7 +30,7 @@ const getProductsByfilters = async (category, color, priceRange, size, types, cu
     Url = Url + `categoryId=${category}&`;
   }
   console.log(Url);
-  return await axios.get(Url, { maxContentLength: 1000000 });
+  return await axiosInstance.get(Url, { maxContentLength: 1000000 });
 };
 const exportedObject = { getAll, getProductById, getProductsByfilters };
 
