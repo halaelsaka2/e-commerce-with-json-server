@@ -9,7 +9,7 @@ const BreadCrumb = (props) => {
       <Breadcrumb.Item href="">
         <HomeOutlined />
       </Breadcrumb.Item>
-      <Breadcrumb.Item style={{ color: "gray", fontSize: small || xSmall ? "smaller" : "" }}>
+      <Breadcrumb.Item href="#/" style={{ color: "gray", fontSize: small || xSmall ? "smaller" : "" }}>
         All Products
       </Breadcrumb.Item>
       {Object.keys(props.categoryById).length > 0 ? (
