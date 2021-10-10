@@ -41,6 +41,11 @@ export default function ProductReducer(state = initialState, action) {
         ...state,
         pageSize: action.data,
       };
+    case types.SAVE_PRODUCT_TYPE:
+      return {
+        ...state,
+        currentType: action.data,
+      };
     case types.SAVE_SORT_VALUE:
       return {
         ...state,

@@ -24,11 +24,11 @@ class HeaderContent extends Component {
     }
   };
   render() {
-    const { small, xSmall, medium, large } = this.props;
+    const { small, large } = this.props;
     const overlay = (
       <Menu
         onClick={this.categoryHandler}
-        mode="horizontal"
+        mode={!large ? "horizontal" : ""}
         style={{ border: "none", backgroundColor: "white", fontWeight: "bold" }}
       >
         {this.props.allCategories.map((category) => (
@@ -39,7 +39,7 @@ class HeaderContent extends Component {
     return (
       <Row justify="space-around">
         <Col span={6} algin="left" pull={!small ? 0 : 3}>
-          <img src="https://z.nooncdn.com/s/app/com/noon/images/logos/noon-black-en.svg" />
+          <img alt="logo" src="https://z.nooncdn.com/s/app/com/noon/images/logos/noon-black-en.svg" />
         </Col>
         {!large && (
           <Col span={8} push={3}>
@@ -70,9 +70,9 @@ class HeaderContent extends Component {
                   placement="bottomRight"
                   overlayStyle={{ width: "40%" }}
                 >
-                  <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
+                  <div className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
                     <UnorderedListOutlined style={{ fontSize: "18px" }} />
-                  </a>
+                  </div>
                 </Dropdown>
               ) : (
                 <UserOutlined />
