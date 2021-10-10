@@ -33,7 +33,7 @@
         "XS",
         "M"
       ],
-      "status": "popular",
+      "status": "new",
       "quantity": 4,
       "categoryId": 2,
       "type": "T-shirts"
@@ -64,14 +64,14 @@
     },
     {
       "id": 3,
-      "name": "T-shirt-Summer",
+      "name": "Long Chiffon Blouse",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994492/N32035560V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992208/N32035560V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992208/N32035560V_3.jpg"
       ],
       "colors": [
-        "black",
+        "green",
         "white"
       ],
       "price": 214,
@@ -88,11 +88,11 @@
     },
     {
       "id": 4,
-      "name": "T-shirt-Summer",
+      "name": "Long Sleeve Blouse",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1614895929/N44817865V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1614895930/N44817865V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1614895931/N44817865V_3.jpg"
       ],
       "colors": [
         "black",
@@ -112,18 +112,17 @@
     },
     {
       "id": 5,
-      "name": "T-shirt-Summer",
+      "name": "Long Chiffon Blouse White",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573994492/N32035580V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992209/N32035580V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1573992208/N32035580V_3.jpg"
       ],
       "colors": [
-        "black",
         "white"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 414,
+      "discount": 10,
       "currency": "USD",
       "sizes": [
         "XS",
@@ -131,260 +130,262 @@
       ],
       "status": "popular",
       "quantity": 4,
-      "categoryId": 2
+      "categoryId": 2,
+      "type": "T-shirts"
     },
     {
       "id": 6,
-      "name": "T-shirt-Summer",
+      "name": "Mandarin Collar Velvet",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_240/v1612514987/N44171084V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_240/v1612514987/N44171084V_2.jpg"
       ],
       "colors": [
-        "black",
-        "white"
+        "green"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 540,
+      "discount": 30,
       "currency": "USD",
       "sizes": [
-        "XS",
         "L"
       ],
-      "status": "popular",
+      "status": "new",
       "quantity": 4,
-      "categoryId": 2
+      "categoryId": 2,
+      "type": "T-shirts"
     },
     {
       "id": 7,
-      "name": "T-shirt-Summer",
+      "name": "Lace Yoke Ribbed Top Black",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_240/v1631177558/N49494655V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1631177559/N49494655V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_240/v1631177558/N49494655V_3.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1631177558/N49494655V_4.jpg"
       ],
       "colors": [
-        "black",
-        "white"
+        "black"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 289,
+      "discount": 0,
       "currency": "USD",
       "sizes": [
-        "XS",
+        "S",
         "L"
       ],
-      "status": "popular",
+      "status": "new",
       "quantity": 4,
-      "categoryId": 2
+      "categoryId": 2,
+      "type": "T-shirts"
     },
     {
       "id": 8,
-      "name": "T-shirt-Summer",
+      "name": "Casual-T-shirt",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1612510700/N44171588V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1612510700/N44171588V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1612510700/N44171588V_3.jpg"
       ],
       "colors": [
-        "black",
-        "white"
+        "yellow"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 1000,
+      "discount": 5,
       "currency": "USD",
       "sizes": [
-        "XS",
+        "XL",
         "L"
       ],
       "status": "popular",
-      "quantity": 4,
-      "categoryId": 2
+      "quantity": 2,
+      "categoryId": 1,
+      "type": "Tank Tops"
     },
     {
       "id": 9,
-      "name": "T-shirt-Summer",
+      "name": "Shirred Round Neck Top Arabian ",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1619506245/N43712631V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1619506246/N43712631V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1619506245/N43712631V_3.jpg"
       ],
       "colors": [
-        "black",
-        "white"
+        "orange"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 377,
+      "discount": 15,
       "currency": "USD",
       "sizes": [
         "XS",
-        "L"
+        "M"
       ],
-      "status": "popular",
+      "status": "new",
       "quantity": 4,
-      "categoryId": 2
+      "categoryId": 2,
+      "type": "Sweatshirts"
     },
     {
       "id": 10,
-      "name": "T-shirt-Summer",
+      "name": "Breasted Blazer",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1606248633/N39911840V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1606248633/N39911840V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1606248633/N39911840V_3.jpg"
       ],
       "colors": [
-        "black",
-        "white"
+        "black"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 1000,
+      "discount": 30,
       "currency": "USD",
       "sizes": [
-        "XS",
-        "L"
+        "XXL",
+        "XL",
+        "M"
       ],
-      "status": "popular",
-      "quantity": 4,
-      "categoryId": 2
+      "status": "new",
+      "quantity": 3,
+      "categoryId": 2,
+      "type": "Sweatshirts"
     },
     {
       "id": 11,
-      "name": "T-shirt-Summer",
+      "name": "Fur Jacket Tobacco",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1616168700/N40878179V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1616168700/N40878179V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1616168700/N40878179V_3.jpg"
       ],
       "colors": [
-        "black",
-        "white"
+        "brown"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 1000,
+      "discount": 0,
       "currency": "USD",
       "sizes": [
         "XS",
         "L"
       ],
-      "status": "popular",
-      "quantity": 4,
-      "categoryId": 2
+      "status": "new",
+      "quantity": 1,
+      "categoryId": 2,
+      "type": "Sweatshirts"
     },
     {
       "id": 12,
-      "name": "T-shirt-Summer",
+      "name": "Logo Print Tote",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1613154591/N43005097A_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1613154591/N43005097A_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1613154591/N43005097A_4.jpg"
       ],
       "colors": [
         "black",
         "white"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 1000,
+      "discount": 0,
       "currency": "USD",
       "sizes": [
         "XS",
         "L"
       ],
-      "status": "popular",
+      "status": "new",
       "quantity": 4,
-      "categoryId": 2
+      "categoryId": 2,
+      "type": "Dress shirts"
     },
     {
       "id": 13,
-      "name": "T-shirt-Summer",
+      "name": "Leggings Black",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1611737592/N44002431V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1611737592/N44002431V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_240/v1611737592/N44002431V_3.jpg"
       ],
       "colors": [
-        "black",
-        "white"
+        "black"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 800,
+      "discount": 0,
       "currency": "USD",
       "sizes": [
-        "XS",
+        "M",
         "L"
       ],
       "status": "popular",
-      "quantity": 4,
-      "categoryId": 2
+      "quantity": 2,
+      "categoryId": 2,
+      "type": "Dress shirts"
     },
     {
       "id": 14,
-      "name": "T-shirt-Summer",
+      "name": "High Heel Pumps",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1568463048/N29891484V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1568463049/N29891484V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1568463049/N29891484V_3.jpg"
       ],
       "colors": [
-        "black",
-        "white"
+        "black"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 669,
+      "discount": 10,
       "currency": "USD",
       "sizes": [
-        "XS",
+        "M",
         "L"
       ],
       "status": "popular",
-      "quantity": 4,
-      "categoryId": 2
+      "quantity": 3,
+      "categoryId": 2,
+      "type": "Dress shirts"
     },
     {
       "id": 15,
-      "name": "T-shirt-Summer",
+      "name": "Slip On Shoes Navy",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1568463071/N29891693V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1568463072/N29891693V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1568463073/N29891693V_3.jpg"
       ],
       "colors": [
-        "black",
-        "white"
+        "black"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 699,
+      "discount": 10,
       "currency": "USD",
       "sizes": [
-        "XS",
+        "M",
         "L"
       ],
       "status": "popular",
       "quantity": 4,
-      "categoryId": 2
+      "categoryId": 2,
+      "type": "Dress shirts"
     },
     {
       "id": 16,
-      "name": "T-shirt-Summer",
+      "name": "Long Sleeve Shirt",
       "images": [
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573994484/N32035406V_1.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992199/N32035396V_2.jpg",
-        "https://z.nooncdn.com/products/tr:n-t_400/v1573992198/N32035396V_3.jpg"
+        "https://z.nooncdn.com/products/tr:n-t_400/v1631424164/N49104477V_1.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1631424164/N49104477V_2.jpg",
+        "https://z.nooncdn.com/products/tr:n-t_400/v1631424163/N49104477V_3.jpg"
       ],
       "colors": [
-        "black",
-        "white"
+        "black"
       ],
-      "price": 214,
-      "discount": 20,
+      "price": 1000,
+      "discount": 0,
       "currency": "USD",
       "sizes": [
-        "XS",
+        "M",
         "L"
       ],
       "status": "popular",
-      "quantity": 4,
-      "categoryId": 2
+      "quantity": 3,
+      "categoryId": 1,
+      "type": "Tank Tops"
     }
   ]
 }

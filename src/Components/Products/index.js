@@ -27,7 +27,14 @@ class Products extends Component {
         <Row gutter={[16, 16]}>
           {this.props.allProductsWithFilter.length > 0 ? (
             this.props.allProductsWithFilter.map((product) => (
-              <Col key={product.id} lg={{ span: 8 }} xl={{ span: 8 }} md={{ span: 12 }} sm={{ span: 24 }}>
+              <Col
+                key={product.id}
+                lg={{ span: 8 }}
+                xl={{ span: 8 }}
+                md={{ span: 12 }}
+                sm={{ span: 24 }}
+                style={{ display: "flex", justifyContent: "center" }}
+              >
                 <Card
                   onClick={() => this.clickProductHandler(product.id)}
                   hoverable

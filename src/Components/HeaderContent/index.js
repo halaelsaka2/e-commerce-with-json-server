@@ -39,7 +39,9 @@ class HeaderContent extends Component {
     return (
       <Row justify="space-around">
         <Col span={6} algin="left" pull={!small ? 0 : 3}>
-          <img alt="logo" src="https://z.nooncdn.com/s/app/com/noon/images/logos/noon-black-en.svg" />
+          <a href="#/">
+            <img alt="logo" src="https://z.nooncdn.com/s/app/com/noon/images/logos/noon-black-en.svg" />
+          </a>
         </Col>
         {!large && (
           <Col span={8} push={3}>

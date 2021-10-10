@@ -27,7 +27,7 @@ class ProductInfo extends Component {
   };
   plusHandler = () => {
     if (this.state.count === this.props.productById?.quantity) {
-      message.info("This Is Quantity Of Product");
+      message.info("Max Quantity");
     } else {
       this.setState({ count: this.state.count + 1 });
     }
